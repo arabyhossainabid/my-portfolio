@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { techItems } from '../../assets/tech-items';
 
 function Tech() {
-  const [techItems, setTechItems] = useState([]);
 
-  useEffect(() => {
-    fetch('/public/AHA/AHA.json')
-      .then((response) => response.json())
-      .then((data) => setTechItems(data))
-      .catch((error) => console.error('Error fetching tech data:', error));
-  }, []);
+  // useEffect(() => {
+  //   fetch('/public/AHA/AHA.json')
+  //     .then((response) => response.json())
+  //     .then((data) => setTechItems(data))
+  //     .catch((error) => console.error('Error fetching tech data:', error));
+  // }, []);
 
   // Split the items into categories
   const devAndDesign = techItems.slice(0, 6);
