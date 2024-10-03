@@ -29,7 +29,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
       {/* Logo and Menu for Small Devices */}
       <div className="navbar-start md:hidden flex items-center justify-between w-full">
         <NavLink to="/" className="btn btn-ghost text-xl">
-          <img className="w-[40px] h-[26px]" src="https://i.ibb.co/xg2J4ds/DF.png" alt="Logo" />
+          <img className="w-[40px] h-[26px]" src="https://i.ibb.co.com/nbd3gYX/AR-portfolio.png" alt="Logo" />
         </NavLink>
         {/* Mobile menu toggle button */}
         <button onClick={handleMenuToggle} className="text-2xl">
@@ -47,7 +47,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
       {/* Center Logo for larger screens */}
       <div className="navbar-center md:flex hidden">
         <NavLink to="/" className="btn btn-ghost text-xl">
-          <img className="w-[40px] h-[26px]" src="https://i.ibb.co/xg2J4ds/DF.png" alt="Logo" />
+          <img className="w-[40px] h-[26px]" src="https://i.ibb.co.com/nbd3gYX/AR-portfolio.png" alt="Logo" />
         </NavLink>
       </div>
 
