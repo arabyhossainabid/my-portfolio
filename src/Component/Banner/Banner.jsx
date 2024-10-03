@@ -20,11 +20,6 @@ function Banner() {
               Get in touch
             </button>
           </NavLink>
-         <a href="file:///D:/programming%20course/Professional%20Frontend%20Developer%20%20CV%20Resume.pdf">
-         <button className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg">
-            See my resume
-          </button>
-         </a>
         </div>
       </div>
       <div>
