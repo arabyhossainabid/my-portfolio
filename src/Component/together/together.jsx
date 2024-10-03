@@ -1,5 +1,6 @@
 import { IoSendOutline } from "react-icons/io5";
 import React from 'react';
+import { NavLink } from 'react-router-dom'; // Ensure to import NavLink
 
 function Together() {
   return (
@@ -10,10 +11,14 @@ function Together() {
           Want to discuss an opportunity to create something great? I’m ready when you are.
         </p>
       </div>
-      <div className="btn flex gap-3 items-center btn-xs sm:btn-sm md:btn-md lg:btn-lg text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 hover:text-black">
-        <IoSendOutline />
-        <button className="focus:outline-none">Get in touch</button>
-      </div>
+      <NavLink to="/contacts">
+     <div className="flex items-center">
+     <button className="btn gap-3 items-center  text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 hover:text-black">
+          <IoSendOutline />
+          Get in touch
+        </button>
+     </div>
+      </NavLink>
     </div>
   );
 }

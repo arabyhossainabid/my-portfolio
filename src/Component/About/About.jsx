@@ -1,5 +1,6 @@
 import { IoSendOutline } from "react-icons/io5";
 import React from 'react';
+import { NavLink } from 'react-router-dom'; // Ensure to import NavLink
 
 const About = () => {
   return (
@@ -39,11 +40,13 @@ const About = () => {
         </div>
         
         <div className='mt-10 lg:mt-0 lg:ml-10'>
-          <img className="w-[250px] sm:w-[300px] lg:w-[400px] mx-auto" src="https://i.ibb.co.com/99kYMkn/1-1.png" alt="Profile" />
-          <div className="btn flex gap-3 items-center mx-auto mt-10 lg:w-[140px] lg:h-[32px] text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 hover:text-black">
-            <IoSendOutline />
-            <button className="focus:outline-none">Get in touch</button>
-          </div>
+          <img className="w-[250px] sm:w-[300px] lg:w-[400px] mx-auto" src="https://i.ibb.co/99kYMkn/1-1.png" alt="Profile" />
+          <NavLink to="/contacts">
+            <div className="btn flex gap-3 items-center mx-auto mt-10 lg:w-[140px] lg:h-[32px] text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 hover:text-black">
+              <IoSendOutline />
+              <button className="focus:outline-none">Get in touch</button>
+            </div>
+          </NavLink>
         </div>
       </div>
     </div>

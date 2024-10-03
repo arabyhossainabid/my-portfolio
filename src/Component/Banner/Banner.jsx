@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Banner() {
   return (
@@ -14,13 +15,20 @@ function Banner() {
           <button className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg">
             See my resume
           </button>
-          <button className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg">
-            Get in touch
+          <NavLink to="/contacts">
+            <button className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg">
+              Get in touch
+            </button>
+          </NavLink>
+         <a href="file:///D:/programming%20course/Professional%20Frontend%20Developer%20%20CV%20Resume.pdf">
+         <button className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg">
+            See my resume
           </button>
+         </a>
         </div>
       </div>
       <div>
-        <img className="w-[250px] sm:w-[300px] lg:w-[400px]" src="https://i.ibb.co.com/99kYMkn/1-1.png" alt="Profile" />
+        <img className="w-[250px] sm:w-[300px] lg:w-[400px]" src="https://i.ibb.co/99kYMkn/1-1.png" alt="Profile" />
       </div>
     </section>
   );

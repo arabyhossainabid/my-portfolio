@@ -26,7 +26,7 @@ function Tech() {
             <figure>
               <img className="w-[90px] sm:w-[100px] lg:w-[114px] h-[90px] sm:h-[100px] lg:h-[114px] rounded-2xl mt-8 sm:mt-12 lg:mt-16" src={tech.image} alt={tech.name} />
             </figure>
-            <div className="pt-5 sm:pt-7 lg:pt-10 mt-5 sm:mt-7 lg:mt-7 flex justify-between mx-5 items-center">
+            <div className="pt-5 pb-3 sm:pt-7 lg:pt-10 mt-5 sm:mt-7 lg:mt-7 flex justify-between mx-5 items-center">
               <h2>{tech.name}</h2>
               {showButton && (
                 <div className="card-actions justify-end">
