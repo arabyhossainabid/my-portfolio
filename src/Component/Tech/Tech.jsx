@@ -4,7 +4,7 @@ function Tech() {
   const [techItems, setTechItems] = useState([]);
 
   useEffect(() => {
-    fetch('../../../public/AHA/AHA.json')
+    fetch('/public/AHA/AHA.json')
       .then((response) => response.json())
       .then((data) => setTechItems(data))
       .catch((error) => console.error('Error fetching tech data:', error));
