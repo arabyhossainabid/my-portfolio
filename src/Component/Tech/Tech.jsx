@@ -1,6 +1,6 @@
 import React from 'react';
 import { techItems } from '../../assets/tech-items';
-import { FaRegHeart } from 'react-icons/fa'; // Icon for the top right corner
+import { GoArrowUpRight } from "react-icons/go";
 
 function Tech() {
   const devAndDesign = techItems.slice(0, 6);
@@ -18,7 +18,7 @@ function Tech() {
             href={tech.url} // Use the URL dynamically from the techItems array
             target="_blank"
             rel="noopener noreferrer"
-            className="relative text-neutral-900 bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-50 card card-compact w-full sm:w-[300px] lg:w-[330px] h-auto shadow-xl transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-neutral-300 hover:dark:bg-neutral-700 hover:text-neutral-900"
+            className="group relative text-neutral-900 bg-neutral-50 dark:bg-neutral-800 dark:text-neutral-50 card card-compact w-full sm:w-[300px] lg:w-[330px] h-auto shadow-xl transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-stone-300 dark:hover:bg-neutral-700 hover:text-neutral-900"
           >
             <figure className="relative">
               <img
@@ -26,7 +26,7 @@ function Tech() {
                 src={tech.image}
                 alt={tech.name}
               />
-              <FaRegHeart
+              <GoArrowUpRight
                 className="absolute top-2 right-2 text-xl text-neutral-900 dark:text-neutral-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:text-red-500"
               />
             </figure>
@@ -47,7 +47,7 @@ function Tech() {
   );
 
   return (
-    <section className="py-16 px-4 sm:px-10 lg:px-52 text-neutral-900 bg-stone-50 dark:bg-black dark:text-stone-50">
+    <section className="py-16 px-4 sm:px-10 lg:px-52 text-neutral-900 bg-neutral-50 dark:bg-black dark:text-stone-50">
       {renderTechSection('Dev & Design', devAndDesign)}
       {renderTechSection('App', app)}
       {renderTechSection('Hardware', hardware, false)}

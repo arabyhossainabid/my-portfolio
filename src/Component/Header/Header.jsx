@@ -38,7 +38,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <ul className="menu menu-compact absolute top-16 left-0 w-full bg-black dark:bg-stone-50 p-4 z-50 text-center">
+        <ul className="menu menu-compact absolute top-16 left-0 w-full bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black p-4 z-50 text-center">
           {links}
         </ul>
       )}

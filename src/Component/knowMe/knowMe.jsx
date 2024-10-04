@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 function KnowMe() {
   return (
     <main>
-      <section className='flex flex-col sm:flex-row justify-between gap-10 my-10 text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900'>
+      <section className='flex flex-col sm:flex-row justify-between gap-10 my-10 bg-yellow-50 dark:text-stone-50 text-neutral-900 dark:bg-black'>
         
-        <Link to="/about" className="card text-center w-full sm:w-96 shadow-xl">
+        <Link to="/about" className="card text-center w-full sm:w-96 shadow-xl transform transition-transform hover:scale-105 hover:shadow-2xl">
           <div className="card-body">
             <h2 className="card-title mx-auto text-lg sm:text-xl">About Me</h2>
             <p className='text-sm sm:text-base'>Who I am and what I do</p>
@@ -19,7 +19,7 @@ function KnowMe() {
           </figure>
         </Link>
 
-        <Link to="/tech" className="card text-center w-full sm:w-96 shadow-xl">
+        <Link to="/tech" className="card text-center w-full sm:w-96 shadow-xl transform transition-transform hover:scale-105 hover:shadow-2xl">
           <div className="card-body">
             <h2 className="card-title mx-auto text-lg sm:text-xl">Tech Stack</h2>
             <p className='text-sm sm:text-base'>The dev tools and devices I use.</p>
