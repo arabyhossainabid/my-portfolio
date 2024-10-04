@@ -20,7 +20,9 @@ const Contacts = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-stone-200 dark:bg-black text-neutral-900 dark:text-stone-50 transition-all">
-      <h1 className="text-5xl font-bold mb-8 animate-pulse">Get in touch</h1>
+      <h1 className="text-5xl font-bold mb-8 animate-pulse text-[rgb(255,0,0)]"> {/* Adjust RGB as needed */}
+        Get in touch
+      </h1>
       <p className='text-stone-500 dark:text-neutral-900'>Let’s build something awesome.</p>
       <form className="w-full max-w-lg" onSubmit={handleSubmit}>
         <div className="mb-4">
