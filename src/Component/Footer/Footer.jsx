@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="footer justify-between text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 p-10">
+    <footer className="footer justify-between bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black p-10">
       <aside>
         <img className="w-[50px] h-[35px]" src="https://i.ibb.co/xg2J4ds/DF.png" alt="ACME Industries Logo" />
         <p className='pb-16 pt-5'>
@@ -13,8 +13,8 @@ function Footer() {
         © 2024 Araby Hossain Abid. All Rights Reserved.
         </p>
       </aside>
-      <nav>
-        <h6 className="footer-title">Links</h6>
+      <nav className='text-center mx-auto'>
+        <h6 className="footer-title mx-auto">Links</h6>
         <ul>
           <li><NavLink to="/about">About</NavLink></li>
           <li className='py-2'><NavLink to="/work">Work</NavLink></li>
@@ -22,7 +22,7 @@ function Footer() {
           <li className='pt-2'><NavLink to="/tech">Tech Stack</NavLink></li>
         </ul>
       </nav>
-      <nav>
+      <nav className='text-center mx-auto'>
         <h6 className="footer-title">Elsewhere</h6>
         <ul className=''>
           <li><a className="link link-hover" href="arabyhossainabid@gmail.com">Email</a></li>

@@ -12,10 +12,14 @@ function Banner() {
           Skilled Front-End Developer with expertise in creating responsive, user-friendly web applications using HTML, CSS, JavaScript, and modern frameworks like React and Next.js. Passionate about bringing designs to life with clean, efficient code and delivering seamless user experiences.
         </p>
         <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-          <button className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg">
+          <a
+            href="Resume"
+            download="Araby_Hossain_Abid_Resume.pdf"
+            className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg"
+          >
             See my resume
-          </button>
-          <NavLink to="/contacts">
+          </a>
+          <NavLink to="../../assets/Professional Frontend Developer  CV Resume.pdf">
             <button className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg">
               Get in touch
             </button>

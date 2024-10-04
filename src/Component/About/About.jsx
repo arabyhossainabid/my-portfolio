@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'; // Ensure to import NavLink
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:px-52 px-10 py-16 text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900">
+    <div className="flex flex-col lg:px-52 px-10 py-16 bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black">
       <h1 className="text-5xl lg:w-auto w-80 font-bold">A little bit about me</h1>
       <p className="mt-4 text-neutral-600">Who I am and what I do.</p>
       <div className='border-b mt-10 text-neutral-600'></div>
@@ -42,7 +42,7 @@ const About = () => {
         <div className='mt-10 lg:mt-0 lg:ml-10'>
           <img className="w-[250px] sm:w-[300px] lg:w-[400px] mx-auto" src="https://i.ibb.co/99kYMkn/1-1.png" alt="Profile" />
           <NavLink to="/contacts">
-            <div className="btn flex gap-3 items-center mx-auto mt-10 lg:w-[140px] lg:h-[32px] text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 hover:text-black">
+            <div className="btn flex gap-3 items-center mx-auto mt-10 lg:w-[140px] lg:h-[32px] bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black">
               <IoSendOutline />
               <button className="focus:outline-none">Get in touch</button>
             </div>

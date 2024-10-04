@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './index.css'; // Make sure you import the CSS here
+import './index.css';
 import Root from './Component/Root/Root';
 import Home from './Component/Home/Home';
 import Contacts from './Component/Contacts/Contacts';

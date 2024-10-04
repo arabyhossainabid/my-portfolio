@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-// import Loader from '../Loader/Loader'; // Import a loader component
+// import Loader from '../Loader/Loader'; 
 
 const Root = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -17,7 +17,6 @@ const Root = () => {
       document.documentElement.classList.remove('dark');
     }
 
-    // Simulate a loading state
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);
@@ -34,8 +33,9 @@ const Root = () => {
     }
   };
 
+  // Uncomment this to display the loader while loading
   // if (isLoading) {
-  //   return <Loader />; // Display the loader while loading
+  //   return <Loader />;
   // }
 
   return (

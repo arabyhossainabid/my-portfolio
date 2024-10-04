@@ -19,7 +19,7 @@ const Contacts = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black text-stone-50 dark:bg-stone-50 dark:text-neutral-900">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black">
       <h1 className="text-5xl font-bold mb-8">Get in touch</h1>
       <p className='text-stone-400 dark:text-neutral-900'>Let’s build something awesome.</p>
       <form className="w-full max-w-lg" onSubmit={handleSubmit}>

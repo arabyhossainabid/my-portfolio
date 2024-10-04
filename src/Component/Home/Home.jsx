@@ -6,7 +6,7 @@ import Together from '../together/together';
 
 const Home = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-16 px-4 sm:px-10 lg:px-52 text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900">
+    <div className="flex flex-col justify-center items-center py-16 px-4 sm:px-10 lg:px-52 bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black">
       <Banner />
       <Selected />
       <KnowMe />
