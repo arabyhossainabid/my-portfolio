@@ -89,7 +89,7 @@ const Contacts = () => {
           Send Message
         </button>
       </form>
-      <div className="mt-8 text-center">
+      <div className="mt-8 text-start">
         <h2 className="text-xl font-bold">Contact Information</h2>
         <p className="mt-2">Email: <a href="mailto:arabyhossainabid@gmail.com" className="text-blue-500 hover:underline">arabyhossainabid@gmail.com</a></p>
         <p>Phone: <span className="text-blue-500 hover:underline">+8801923807556</span></p>
