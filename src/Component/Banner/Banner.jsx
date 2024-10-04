@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import { Resume } from '../../assets/Professional Frontend Developer  CV Resume.pdf';
 
 function Banner() {
   return (
@@ -19,7 +20,7 @@ function Banner() {
           >
             See my resume
           </a>
-          <NavLink to="../../assets/Professional Frontend Developer  CV Resume.pdf">
+          <NavLink to="/contacts">
             <button className="btn btn-outline text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 rounded-lg">
               Get in touch
             </button>
