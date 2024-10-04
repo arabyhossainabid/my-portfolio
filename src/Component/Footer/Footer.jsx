@@ -5,11 +5,13 @@ function Footer() {
   return (
     <footer className="footer justify-between bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black p-10">
       <aside>
-        <img
+       <a href="/">
+       <img
           className="w-[50px] h-[35px] transition-transform duration-300 transform hover:scale-110"
           src="https://i.ibb.co/xg2J4ds/DF.png"
           alt="ACME Industries Logo"
         />
+       </a>
         <p className="pb-16 pt-5">Thanks for stopping by ッ</p>
         <p>© 2024 Araby Hossain Abid. All Rights Reserved.</p>
       </aside>
