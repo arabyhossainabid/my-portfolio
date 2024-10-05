@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-// import Loader from '../Loader/Loader'; 
+import GradientImage from '../../assets/Gradient.png'; // Import the first gradient image
 
 const Root = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -33,18 +33,37 @@ const Root = () => {
     }
   };
 
-  // Uncomment this to display the loader while loading
-  // if (isLoading) {
-  //   return <Loader />;
-  // }
-
   return (
-    <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
-      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <div className="max-w-full">
-        <Outlet />
+    <div 
+      className={`${isDarkMode ? 'dark' : ''}`} 
+      style={{ 
+        backgroundColor: isDarkMode ? 'black' : '#ffffff', 
+        minHeight: '100vh' // Set min-height to cover full viewport height
+      }}
+    >
+      {/* Background Layers */}
+      <div
+        style={{
+          backgroundImage: `url(${GradientImage})`, // First gradient image
+          height: "550px",
+          width: "100%",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          position: "absolute", // Position absolutely for full coverage
+          top: 0,
+          left: 0,
+          zIndex: 0, // Behind everything
+        }}
+      />
+
+      {/* Main Content */}
+      <div style={{ position: 'relative', zIndex: 2 }}>
+        <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+        <div className="max-w-full">
+          <Outlet />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

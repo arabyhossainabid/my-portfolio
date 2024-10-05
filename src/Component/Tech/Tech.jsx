@@ -47,7 +47,7 @@ function Tech() {
   );
 
   return (
-    <section className="py-16 px-4 sm:px-10 lg:px-52 text-neutral-900 bg-neutral-50 dark:bg-black dark:text-stone-50">
+    <section className="py-16 px-4 sm:px-10 lg:px-52 text-neutral-900 bg-transparent dark:bg-transparent dark:text-stone-50">
       {renderTechSection('Dev & Design', devAndDesign)}
       {renderTechSection('App', app)}
       {renderTechSection('Hardware', hardware, false)}

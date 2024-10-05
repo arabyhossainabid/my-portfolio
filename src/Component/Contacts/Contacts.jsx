@@ -19,7 +19,7 @@ const Contacts = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-stone-200 dark:bg-black text-neutral-900 dark:text-stone-50 transition-all">
+    <div className="flex flex-col items-center justify-center min-h-screen text-neutral-900 dark:text-stone-50 transition-all">
       <h1 className="text-5xl font-bold mb-8 animate-pulse text-[rgb(255,0,0)]"> {/* Adjust RGB as needed */}
         Get in touch
       </h1>

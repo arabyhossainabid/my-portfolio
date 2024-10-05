@@ -7,7 +7,7 @@ function Selected() {
       <div className='text-4xl font-bold pb-10'>Selected Work</div>
 
       {/* First Work Card */}
-      <div className="bg-zinc-900 mb-8 flex flex-col lg:flex-row justify-between rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+      <div className=" bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black mb-8 flex flex-col lg:flex-row justify-between rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
         <div className="card-body bg-stone-300 dark:bg-black text-neutral-900 dark:text-stone-50 p-6">
           <img className='w-20 mb-4' src="https://i.ibb.co/27SwZW2/Dream-Job.png" alt="Career Hub Dream Job" />
           <h2 className="card-title text-3xl font-bold mb-2">career-hub-dream-job</h2>

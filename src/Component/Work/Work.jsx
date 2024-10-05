@@ -3,9 +3,10 @@ import { GoArrowRight } from "react-icons/go";
 
 function Work() {
   return (
-    <section className='pt-32 pb-20 flex flex-col py-16 px-4 sm:px-10 lg:px-52 bg-neutral-50 dark:text-stone-50 text-neutral-900 dark:bg-black'>
-      <h1 className='text-5xl font-bold pb-4'>Projects</h1>
-      <p className='pb-10 text-neutral-600 dark:text-neutral-400'>Projects and ideas I’ve worked on</p>
+    <section className='pt-32 pb-20 flex flex-col py-16 px-4 sm:px-10 lg:px-52  dark:text-stone-50 text-neutral-900 '>
+      <h1 className='text-6xl font-bold pb-4'>Projects</h1>
+      <p className='text-neutral-600 dark:text-neutral-600 text-2xl'>Projects and ideas I’ve worked on</p>
+      <div className='border my-20'></div>
 
       {/* First Work Card */}
       <div className="bg-zinc-900 mb-8 flex flex-col lg:flex-row justify-between rounded-lg shadow-lg transform hover:scale-105 transition duration-300">

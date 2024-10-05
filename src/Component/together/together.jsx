@@ -13,7 +13,7 @@ function Together() {
       </div>
       <NavLink to="/contacts">
         <div className="flex items-center">
-          <button className="btn gap-3 items-center text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 transition-transform transform hover:scale-105 hover:bg-stone-400 dark:hover:bg-neutral-700">
+          <button className="btn gap-3 items-center bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black transition-transform transform hover:scale-105 hover:bg-stone-400 dark:hover:bg-neutral-700">
             <IoSendOutline />
             Get in touch
           </button>

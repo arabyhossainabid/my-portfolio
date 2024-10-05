@@ -24,7 +24,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
   );
 
   return (
-    <div className="navbar px-4 md:px-48 bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black relative z-50">
+    <div className="navbar px-4 md:px-48 dark:text-stone-50 text-neutral-900 relative z-50">
       {/* Logo and Menu for Small Devices */}
       <div className="navbar-start md:hidden flex items-center justify-between w-full">
         <NavLink to="/" className="btn btn-ghost text-xl">
