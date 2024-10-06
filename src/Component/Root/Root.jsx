@@ -2,11 +2,13 @@ import { Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import GradientImage from '../../assets/Gradient.png'; // Import the gradient image
+import GradientImage from '../../assets/Gradient.png'; 
+import footerGradient from '../../assets/footerGradient.png'; 
+import Loader from '../Loader/Loader'; // Import the Loader component
 
 const Root = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true); // State to manage loading
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -17,20 +19,25 @@ const Root = () => {
       document.documentElement.classList.remove('dark');
     }
 
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
+    const timer = setTimeout(() => {
+      setIsLoading(false); // Set loading to false after 2 seconds
+    }, 1000);
+
+    return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    if (!isDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
+    setIsDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      if (newMode) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+      return newMode;
+    });
   };
 
   return (
@@ -38,36 +45,47 @@ const Root = () => {
       className={`${isDarkMode ? 'dark' : ''}`} 
       style={{ 
         backgroundColor: isDarkMode ? 'black' : '#ffffff', 
-        minHeight: '100vh' // Set min-height to cover full viewport height
+        minHeight: '100vh', 
+        display: 'flex',
+        flexDirection: 'column',
+        position: 'relative',
+        overflow: 'hidden'
       }}
     >
-      {/* Background Image for sm and lg screens */}
+      {/* Full height background image */}
       <div
         className="absolute top-0 left-0 w-full z-0"
-        style={{
-          backgroundImage: `url(${GradientImage})`, // Background image
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "350px", // Default height for small screens
-        }}
-      />
-      <div
-        className="hidden lg:block absolute top-0 left-0 w-full z-0"
         style={{
           backgroundImage: `url(${GradientImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "500px", // Height for large screens
+          height: "70vh",
+        }}
+      />
+      
+      <div
+        className="absolute bottom-0 left-0 w-full z-0"
+        style={{
+          backgroundImage: `url(${footerGradient})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "70vh",
         }}
       />
 
-      {/* Main Content */}
-      <div style={{ position: 'relative', zIndex: 2 }}>
-        <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-        <div className="max-w-full">
-          <Outlet />
+      {isLoading ? (  // Display Loader when loading
+        <Loader isDarkMode={isDarkMode} />
+      ) : (
+        <div style={{ position: 'relative', zIndex: 2, flex: 1 }}>
+          <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+          <div className="max-w-full">
+            <Outlet />
+          </div>
         </div>
-        <Footer />
+      )}
+
+      <div style={{ position: 'relative', zIndex: 2, flex: 1 }}>
+        <Footer toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       </div>
     </div>
   );

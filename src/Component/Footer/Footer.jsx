@@ -3,18 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer 
-      className="footer flex flex-col lg:flex-row justify-between bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black p-10"
-      style={{
-        backgroundImage: 'url(https://i.ibb.co/2dYwr4K/Gradient-1.png)', // Set the gradient background image
-        backgroundSize: 'cover', // Ensure the image covers the footer
-        backgroundPosition: 'center', // Center the background image
-        backgroundRepeat: 'no-repeat', // Prevent background image from repeating
-        padding: "50px 0",
-        height: '100%', // Set height based on screen size
-        width: '100%', // Full width
-      }}
-    >
+    <div>
+      <div className='border-b border-neutral-400 dark:border-neutral-600'></div>
+      <footer 
+      className="footer flex flex-col lg:flex-row h-[100%] justify-between dark:text-stone-50 text-neutral-900 p-10">
       <aside className="text-center lg:text-left mb-10 lg:mb-0">
         <a href="/" aria-label="Go to homepage">
           <img
@@ -117,6 +109,7 @@ function Footer() {
         </ul>
       </nav>
     </footer>
+    </div>
   );
 }
 

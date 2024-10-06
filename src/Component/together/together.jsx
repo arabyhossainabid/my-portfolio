@@ -1,6 +1,6 @@
 import { IoSendOutline } from "react-icons/io5";
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // Ensure to import NavLink
+import { NavLink } from 'react-router-dom';
 
 function Together() {
   return (

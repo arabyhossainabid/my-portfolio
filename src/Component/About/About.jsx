@@ -1,6 +1,6 @@
 import { IoSendOutline } from "react-icons/io5";
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // Ensure to import NavLink
+import { NavLink } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <div className="bg-transparent w-full h-full">
         <h1 className="text-5xl lg:w-auto w-80 font-bold transition-transform transform hover:scale-105">A little bit about me</h1>
         <p className="mt-4 text-neutral-600 transition-transform transform hover:scale-105">Who I am and what I do.</p>
-        <div className='border-b mt-10 text-neutral-600'></div>
+        <div className='border-b border-neutral-400 mt-10 dark:border-neutral-600'></div>
         
         <div className='flex flex-col-reverse lg:flex-row justify-between mt-16'>
           <div className='text-neutral-600 w-full lg:w-[605px]'>

@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Header = ({ toggleTheme, isDarkMode }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Toggle mobile menu open/close
   const handleMenuToggle = () => {
