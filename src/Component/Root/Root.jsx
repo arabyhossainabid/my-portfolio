@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import GradientImage from '../../assets/Gradient.png'; // Import the first gradient image
+import GradientImage from '../../assets/Gradient.png'; // Import the gradient image
 
 const Root = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -41,18 +41,23 @@ const Root = () => {
         minHeight: '100vh' // Set min-height to cover full viewport height
       }}
     >
-      {/* Background Layers */}
+      {/* Background Image for sm and lg screens */}
       <div
+        className="absolute top-0 left-0 w-full z-0"
         style={{
-          backgroundImage: `url(${GradientImage})`, // First gradient image
-          height: "550px",
-          width: "100%",
+          backgroundImage: `url(${GradientImage})`, // Background image
           backgroundSize: "cover",
           backgroundPosition: "center",
-          position: "absolute", // Position absolutely for full coverage
-          top: 0,
-          left: 0,
-          zIndex: 0, // Behind everything
+          height: "350px", // Default height for small screens
+        }}
+      />
+      <div
+        className="hidden lg:block absolute top-0 left-0 w-full z-0"
+        style={{
+          backgroundImage: `url(${GradientImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "500px", // Height for large screens
         }}
       />
 

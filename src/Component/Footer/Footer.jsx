@@ -4,16 +4,18 @@ import { NavLink } from 'react-router-dom';
 function Footer() {
   return (
     <footer 
-      className="footer justify-between bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black p-10"
+      className="footer flex flex-col lg:flex-row justify-between bg-stone-50 dark:text-stone-50 text-neutral-900 dark:bg-black p-10"
       style={{
         backgroundImage: 'url(https://i.ibb.co/2dYwr4K/Gradient-1.png)', // Set the gradient background image
         backgroundSize: 'cover', // Ensure the image covers the footer
         backgroundPosition: 'center', // Center the background image
         backgroundRepeat: 'no-repeat', // Prevent background image from repeating
-        padding: "50px 0", // Use padding for height instead of fixed height
+        padding: "50px 0",
+        height: '100%', // Set height based on screen size
+        width: '100%', // Full width
       }}
     >
-      <aside>
+      <aside className="text-center lg:text-left mb-10 lg:mb-0">
         <a href="/" aria-label="Go to homepage">
           <img
             className="w-[50px] h-[35px] transition-transform duration-300 transform hover:scale-110"
@@ -21,12 +23,12 @@ function Footer() {
             alt="ACME Industries Logo"
           />
         </a>
-        <p className="pb-16 pt-5">Thanks for stopping by ッ</p>
+        <p className="pb-5 lg:pb-16 pt-5">Thanks for stopping by ッ</p>
         <p>© 2024 Araby Hossain Abid. All Rights Reserved.</p>
       </aside>
 
-      <nav className="text-center mx-auto">
-        <h6 className="footer-title mx-auto">Links</h6>
+      <nav className="text-center mx-auto mb-10 lg:mb-0">
+        <h6 className="footer-title text-lg lg:text-xl mb-4">Links</h6>
         <ul>
           <li>
             <NavLink
@@ -68,8 +70,8 @@ function Footer() {
       </nav>
 
       <nav className="text-center mx-auto">
-        <h6 className="footer-title">Elsewhere</h6>
-        <ul>
+        <h6 className="footer-title text-lg lg:text-xl mb-4">Elsewhere</h6>
+        <ul className='ps-5'>
           <li>
             <a
               className="link link-hover transition-colors duration-300 hover:text-blue-500"
