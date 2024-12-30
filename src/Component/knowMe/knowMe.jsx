@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function KnowMe() {
   return (
     <main>
-      <section className='flex flex-col sm:flex-row justify-between gap-10 my-10 bg-yellow-50 dark:text-stone-50 text-neutral-900 dark:bg-black'>
+      <section className='flex flex-col sm:flex-row justify-between gap-10 my-10 dark:text-stone-50 text-neutral-900 dark:bg-black'>
         
         <Link to="/about" className="card text-center w-full sm:w-96 shadow-xl transform transition-transform hover:scale-105 hover:shadow-2xl">
           <div className="card-body">
