@@ -3,12 +3,10 @@ import { useState, useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import GradientImage from '../../assets/Gradient.png'; 
-import footerGradient from '../../assets/footerGradient.png'; 
-import Loader from '../Loader/Loader'; // Import the Loader component
+import footerGradient from '../../assets/footerGradient.png';
 
 const Root = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // State to manage loading
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -18,12 +16,6 @@ const Root = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-
-    const timer = setTimeout(() => {
-      setIsLoading(false); // Set loading to false after 2 seconds
-    }, 1000);
-
-    return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
 
   const toggleTheme = () => {
@@ -52,7 +44,7 @@ const Root = () => {
         overflow: 'hidden'
       }}
     >
-      {/* Full height background image */}
+      {/* Background */}
       <div
         className="absolute top-0 left-0 w-full z-0"
         style={{
@@ -73,18 +65,12 @@ const Root = () => {
         }}
       />
 
-      {isLoading ? (  // Display Loader when loading
-        <Loader isDarkMode={isDarkMode} />
-      ) : (
-        <div style={{ position: 'relative', zIndex: 2, flex: 1 }}>
-          <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-          <div className="max-w-full">
-            <Outlet />
-          </div>
-        </div>
-      )}
-
+      {/* Content */}
       <div style={{ position: 'relative', zIndex: 2, flex: 1 }}>
+        <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+        <div className="max-w-full">
+          <Outlet />
+        </div>
         <Footer toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       </div>
     </div>

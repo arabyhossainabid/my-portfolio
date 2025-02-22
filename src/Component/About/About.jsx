@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div className="flex flex-col lg:px-52 px-10 py-16  text-neutral-900 dark:text-stone-50">
       <div className="bg-transparent w-full h-full">
-        <h1 className="text-5xl lg:w-auto w-80 font-bold transition-transform transform hover:scale-105">A little bit about me</h1>
-        <p className="mt-4 text-neutral-600 transition-transform transform hover:scale-105">Who I am and what I do.</p>
+        <h1 className="text-5xl lg:w-auto w-80 font-bold transition-transform transform">A little bit about me</h1>
+        <p className="mt-4 text-neutral-600 transition-transform transform">Who I am and what I do.</p>
         <div className='border-b border-neutral-400 mt-10 dark:border-neutral-600'></div>
         
         <div className='flex flex-col-reverse lg:flex-row justify-between mt-16'>

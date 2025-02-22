@@ -19,33 +19,33 @@ const Contacts = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-neutral-900 dark:text-stone-50 transition-all">
-      <h1 className="text-5xl font-bold mb-8 animate-pulse text-[rgb(255,0,0)]">
+<section>
+<div className="flex flex-col items-center justify-center min-h-screen text-neutral-900 dark:text-stone-50 transition-all">
+      <h1 className="text-5xl font-bold mb-8 animate-pulse">
         Get in touch
       </h1>
-      <p className=' dark:text-stone-50 text-neutral-900 '>Let’s build something awesome.</p>
       <form className="w-full max-w-lg" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-sm font-bold mb-2" htmlFor="name">
             Name
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105"
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 text-opacity-50 bg-white bg-opacity-20 border-gray-300 border-opacity-50 leading-tight focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105 dark:text-stone-50 dark:text-opacity-50 dark:bg-neutral-900 dark:bg-opacity-20 dark:border-stone-50 dark:border-opacity-50"
+  id="name"
+  type="text"
+  name="name"
+  placeholder="Your Name"
+  value={formData.name}
+  onChange={handleChange}
+  required
+/>
         </div>
         <div className="mb-4">
           <label className="block text-sm font-bold mb-2" htmlFor="email">
             Email
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 text-opacity-50 bg-white bg-opacity-20 border-gray-300 border-opacity-50 leading-tight focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105 dark:text-stone-50 dark:text-opacity-50 dark:bg-neutral-900 dark:bg-opacity-20 dark:border-stone-50 dark:border-opacity-50"
             id="email"
             type="email"
             name="email"
@@ -60,7 +60,7 @@ const Contacts = () => {
             Subject
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 text-opacity-50 bg-white bg-opacity-20 border-gray-300 border-opacity-50 leading-tight focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105 dark:text-stone-50 dark:text-opacity-50 dark:bg-neutral-900 dark:bg-opacity-20 dark:border-stone-50 dark:border-opacity-50"
             id="subject"
             type="text"
             name="subject"
@@ -75,28 +75,30 @@ const Contacts = () => {
             Message
           </label>
           <textarea
-            className="shadow appearance-none border rounded w-full h-[323px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105"
-            id="message"
-            name="message"
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
+  className="shadow appearance-none border rounded w-full h-64 py-2 px-3 text-gray-700 text-opacity-50 bg-white bg-opacity-20 border-gray-300 border-opacity-50 leading-tight focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105 dark:text-stone-50 dark:text-opacity-50 dark:bg-neutral-900 dark:bg-opacity-20 dark:border-stone-50 dark:border-opacity-50"
+  id="message"
+  name="message"
+  placeholder="Your Message"
+  value={formData.message}
+  onChange={handleChange}
+  required
+/>
         </div>
-        <button
-          type="submit"
-          className="btn flex gap-3 items-center mx-auto mt-10 lg:w-[140px] lg:h-[32px] text-stone-50 bg-black dark:bg-stone-50 dark:text-neutral-900 hover:text-black transition-transform transform hover:scale-105"
+        <a href="mailto:arabyhossainabid@gmail.com"type="submit"className="btn flex gap-3 items-center mx-auto mt-10 px-6 py-2 text-stone-50 bg-black dark:bg-stone-50 dark:hover:bg-neutral-300 dark:text-neutral-900 hover:bg-gray-800 dark:hover:bg-gray-200 transition-all transform hover:scale-105 rounded-lg"
         >
-          Send Message
-        </button>
-      </form>
-      <div className="mt-8 text-start">
-        <h2 className="text-xl font-bold">Contact Information</h2>
-        <p className="mt-2">Email: <a href="mailto:arabyhossainabid@gmail.com" className="text-blue-500 hover:underline">arabyhossainabid@gmail.com</a></p>
-        <p>Phone: <span className="text-blue-500 hover:underline">+8801923807556</span></p>
+       
+  Send Message
+
+        </a>
+      </form> 
       </div>
-    </div>
+      <div className="my-8 text-center">
+        <h2 className="text-xl font-bold">Contact Information</h2>
+        <p className="mt-2">Email : <a href="mailto:arabyhossainabid@gmail.com" className="text-blue-500 hover:underline">arabyhossainabid@gmail.com</a></p>
+        <p>Phone: <span className="text-blue-500">+8801923807556</span></p>
+      </div>
+
+</section>
   );
 };
 

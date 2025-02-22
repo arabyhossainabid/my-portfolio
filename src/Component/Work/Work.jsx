@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 
 function Work() {
   return (
-    <section className='pt-32 pb-20 flex flex-col py-16 px-4 sm:px-10 lg:px-52  dark:text-stone-50 text-neutral-900 '>
+    <section className='pt-14 pb-20 flex flex-col py-16 px-4 sm:px-10 lg:px-52  dark:text-stone-50 text-neutral-900 '>
       <h1 className='text-6xl font-bold pb-4'>Projects</h1>
       <p className='text-neutral-600 dark:text-neutral-600 text-2xl'>Projects and ideas I’ve worked on</p>
       <div className='border my-20'></div>
@@ -17,7 +17,7 @@ function Work() {
           <div className="card-actions">
             <a href="https://career-hub-dream-job.netlify.app/">
               <button className="flex items-center gap-2 bg-stone-300 text-neutral-900 dark:bg-black dark:text-stone-50 px-4 py-2 rounded-lg shadow-md transform hover:translate-x-2 transition duration-300">
-                Download App <GoArrowRight />
+                See More <GoArrowRight />
               </button>
             </a>
           </div>
@@ -36,7 +36,7 @@ function Work() {
           <div className="card-actions">
             <a href="https://nextjs.org/docs">
               <button className="flex items-center gap-2 bg-stone-300 text-neutral-900 dark:bg-black dark:text-stone-50 px-4 py-2 rounded-lg shadow-md transform hover:translate-x-2 transition duration-300">
-                Download App <GoArrowRight />
+                See More <GoArrowRight />
               </button>
             </a>
           </div>
@@ -55,7 +55,7 @@ function Work() {
           <div className="card-actions">
             <a href="https://tailwindcss.com/">
               <button className="flex items-center gap-2 bg-stone-300 text-neutral-900 dark:bg-black dark:text-stone-50 px-4 py-2 rounded-lg shadow-md transform hover:translate-x-2 transition duration-300">
-                Download App <GoArrowRight />
+                See More <GoArrowRight />
               </button>
             </a>
           </div>

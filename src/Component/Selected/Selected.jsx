@@ -15,7 +15,7 @@ function Selected() {
           <div className="card-actions">
             <a href="https://career-hub-dream-job.netlify.app/">
               <button className="flex items-center gap-2 bg-stone-300 text-neutral-900 dark:bg-black dark:text-stone-50 px-4 py-2 rounded-lg shadow-md transform hover:translate-x-2 transition duration-300">
-                Download App <GoArrowRight />
+                See more <GoArrowRight />
               </button>
             </a>
           </div>
@@ -34,7 +34,7 @@ function Selected() {
           <div className="card-actions">
             <a href="https://nextjs.org/docs">
               <button className="flex items-center gap-2 bg-stone-300 text-neutral-900 dark:bg-black dark:text-stone-50 px-4 py-2 rounded-lg shadow-md transform hover:translate-x-2 transition duration-300">
-                Download App <GoArrowRight />
+                See more <GoArrowRight />
               </button>
             </a>
           </div>
@@ -53,7 +53,7 @@ function Selected() {
           <div className="card-actions">
             <a href="https://tailwindcss.com/">
               <button className="flex items-center gap-2 bg-stone-300 text-neutral-900 dark:bg-black dark:text-stone-50 px-4 py-2 rounded-lg shadow-md transform hover:translate-x-2 transition duration-300">
-                Download App <GoArrowRight />
+                See more <GoArrowRight />
               </button>
             </a>
           </div>
